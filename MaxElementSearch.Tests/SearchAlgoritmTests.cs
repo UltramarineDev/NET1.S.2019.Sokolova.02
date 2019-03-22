@@ -15,13 +15,13 @@ namespace MaxElementSearch.Tests
         [Test]
         public void FindMaxElement_EmptyArray_ThrowArgumentException()
         {
-            Assert.Throws<ArgumentException>(() => SearchAlgorithm.FindMaxElement(new int[] { }), message: "Source array can not be empty");
+            Assert.Throws<ArgumentException>(() => SearchAlgorithm.FindMaxElement(new int[] { }));
         }
 
         [Test]
         public void FindMaxElement_ArrayIsNull_ThrowArgumentNullException()
         {
-            Assert.Throws<ArgumentNullException>(() => SearchAlgorithm.FindMaxElement(null), message: "Source array can not be null");
+            Assert.Throws<ArgumentNullException>(() => SearchAlgorithm.FindMaxElement(null));
         }
     }
 }

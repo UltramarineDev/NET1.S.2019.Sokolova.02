@@ -18,32 +18,25 @@ namespace MaxElementSearch
         {
             if (array == null)
             {
-                throw new ArgumentNullException(nameof(array));
+                throw new ArgumentNullException(nameof(array), "Source array can not be null.");
             }
 
             if (array.Length == 0)
             {
-                throw new ArgumentException(nameof(array));
+                throw new ArgumentException("Source array can not be empty.", nameof(array));
             }
 
-            int maxElement = array[array.Length - 1];
-            int index = array.Length - 1;      
-            return FindMaxElementHelp(maxElement, array, index);
+            return FindMaxElementHelp(array);
         }
 
-        private static int FindMaxElementHelp(int maxElement, int[] array, int index)
+        private static int FindMaxElementHelp(int[] array, int index = 0)
         {
-            if (index < 1)
+            if (index == array.Length)
             {
-                return maxElement;
-            }
-
-            if (maxElement < array[index - 1])
-            {
-                maxElement = array[index - 1];  
-            }    
+                return array[0];
+            }  
             
-            return FindMaxElementHelp(maxElement, array, index - 1);         
+            return Math.Max(array[index], FindMaxElementHelp(array, index + 1));         
         }
     }
 }
