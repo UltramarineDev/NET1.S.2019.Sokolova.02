@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<NumberDetails>
+  <Number numberSource="15" numberin="15" i="0" j="0" resultNumber="15"/>
+  <Number numberSource="8" numberin="15" i="0" j="0" resultNumber="9"/>
+  <Number numberSource="8" numberin="15" i="3" j="8" resultNumber="120"/>
+  <Number numberSource="53" numberin="11" i="1" j="2" resultNumber="55"/>
+  <Number numberSource="8" numberin="100" i="2" j="9" resultNumber="144"/>
+  <Number numberSource="-5" numberin="32" i="2" j="6" resultNumber="131"/>
+</NumberDetails>
