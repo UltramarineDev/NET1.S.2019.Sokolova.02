@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace NumbersService.Tests
@@ -20,13 +17,13 @@ namespace NumbersService.Tests
             {
                 var testCases = new List<TestCaseData>();
      
-                using (var sourseFile = File.OpenRead(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Source.txt")))
-                using (var streanReader = new StreamReader(sourseFile))
+                using (var sourceFile = File.OpenRead(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Source.txt")))
+                using (var streamReader = new StreamReader(sourceFile))
                 {
                     string line = string.Empty;
                     while (line != null)
                     {
-                        line = streanReader.ReadLine();
+                        line = streamReader.ReadLine();
                         if (line != null)
                         {
                             string[] split = line.Split(new char[] { ' ' });
