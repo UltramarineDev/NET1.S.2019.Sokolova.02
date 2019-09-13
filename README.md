@@ -1,6 +1,6 @@
 ## Задачи
 :heavy_check_mark: 1. Даны два целых знаковых четырехбайтовых числа и две позиции битов i и j (i<=j). Реализовать алгоритм InsertNumber вставки первых (j - i + 1) битов второго числа в первое так, чтобы биты второго числа занимали позиции с бита i по бит j (биты нумеруются справа налево). Разработать модульные тесты (NUnit и MS Unit Test - (DDT))) для тестирования метода. (deadline - 23.03.2019, 24.00)<br/>
-see **_"NumbersService"_**
+see **_"NumbersService"_**<br/>
 :heavy_check_mark: 2. Реализовать рекурсивный алгоритм поиска максимального элемента в неотсортированном целочисленом массиве. Разработать модульные тесты NUnit для тестирования метода. (deadline - 22.03.2019, 24.00)<br/> 
 [See in Day 1 (FindMaxElement method)](https://github.com/UltramarineDev/NET1.S.2019.Sokolova.01/blob/master/Sorting/ArrayExtension.cs)
 <br/>
